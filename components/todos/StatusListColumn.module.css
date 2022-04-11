@@ -1,0 +1,66 @@
+.paper {
+  width: calc(25% - 10px);
+  background: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px;
+  position: relative;
+}
+
+.paper .header {
+  border-left: 6px solid;
+  padding: 0 10px;
+}
+.paper:nth-child(1) .header {
+  border-color: #f76568;
+}
+.paper:nth-child(2) .header {
+  border-color: #ffc773;
+}
+.paper:nth-child(3) .header {
+  border-color: #6be795;
+}
+.paper:nth-child(4) .header {
+  border-color: #7389ff;
+}
+
+.paper .header h3 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+  text-transform: capitalize !important;
+}
+.paper .header p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.addTaskBtn {
+  outline: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #3DA623;;
+  position: relative;
+  color: white;
+  position: absolute;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addTaskBtn:hover {
+  cursor: pointer;
+}
+
+.actions {
+
+}

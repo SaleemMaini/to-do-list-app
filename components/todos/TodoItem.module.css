@@ -1,0 +1,58 @@
+.taskItem {
+  background: #ffffff;
+  width: 100%;
+  margin-top: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04),
+    0px 0px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.taskItem p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.taskItem button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+.taskItem button:hover {
+  cursor: pointer;
+}
+
+.actions {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 12px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  border-radius: 11px;
+}
+.actions ul {
+  list-style: none;
+}
+.popper {
+  position: absolute !important;
+  top: 50px !important;
+  left: 50px !important;
+  z-index: 999;
+}
+.actions button {
+  text-transform: capitalize;
+  color: black;
+}
+.actions button:first-child span {
+  color: red;
+}
+.actions button:last-child span svg {
+  margin-left: 15px;
+  color: #1695bd;
+}
