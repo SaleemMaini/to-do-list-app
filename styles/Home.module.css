@@ -1,16 +1,7 @@
-.container{
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 40px;
-}
-
 .listsContainer{
   width: 98vw;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  margin-top: 40px;
+  margin: 0 auto;
 }

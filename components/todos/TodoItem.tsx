@@ -1,4 +1,3 @@
-import { style } from "@mui/system";
 import { useState } from "react";
 import { useDrag } from "react-dnd";
 import styles from "./TodoItem.module.css";
@@ -8,6 +7,7 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import ModeEditIcon from "@mui/icons-material/ModeEdit";
 import CustomModal from "../UI/CustomModal";
 import ClickAwayListener from "@mui/material/ClickAwayListener";
+import Link from "next/link";
 
 export interface TodoItemProps {
   _id: string;
@@ -38,7 +38,9 @@ const TodoItem: React.FC<TodoItemProps> = (props) => {
   return (
     <ClickAwayListener onClickAway={() => setActionsIsVisible(false)}>
       <div className={styles.taskItem} ref={todoDraggableRef}>
-        <p>{"Something I have to do but I don't have time to do."}</p>
+        <Link href="/todos/[todoId]" as={"/todos/" + _id} passHref>
+          <p>{"Something I have to do but I don't have time to do."}</p>
+        </Link>
         <button
           onClick={() =>
             setActionsIsVisible((actionsIsVisible) => !actionsIsVisible)

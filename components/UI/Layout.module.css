@@ -1,0 +1,13 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+
+}
+.container h1 {
+    text-align: center;
+    padding: 30px;
+}
+.container section {
+    width: 100%;
+    
+}
